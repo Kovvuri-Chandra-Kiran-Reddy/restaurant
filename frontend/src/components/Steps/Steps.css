@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+#con {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-stepper {
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+.step-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+@media screen and (max-width : 674px) {
+    .center-stepper {
+        max-width: 600px;
+    }
+
+    #mm{
+        width: 80%;
+    }
+}
