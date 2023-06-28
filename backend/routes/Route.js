@@ -8,7 +8,7 @@ router.route('/upload').post((req, res) => {
     const OwnerName = req.body.OwnerName;
     const OwnerEmail = req.body.OwnerEmail;
     const OwnerPhone = req.body.OwnerPhone;
-    const OwnerPassword = req.body.OwnerPassword;
+    const OwnerPassword = req.body.hashedOwnerPassword;
     const menuItems = req.body.menuItemsSep;
     const newData = new UserModel({
         RestaurantName, RestaurantLocation, OwnerName, OwnerEmail, OwnerPhone, OwnerPassword, menuItems
